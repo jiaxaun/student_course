@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+	<!-- 使用注解的方式 -->	
+	<mvc:annotation-driven></mvc:annotation-driven>
+
+	<context:component-scan base-package="com.nnxy.controller" ></context:component-scan>
+  <mvc:resources location="/js/" mapping="/js/**"/>
+  <mvc:resources location="/css/" mapping="/css/**"/>
+  <mvc:resources location="/images/" mapping="/images/**"/>
+  <mvc:default-servlet-handler />
+
+	<!-- 配置响应消息相关的格式 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		
+		<!-- 配置响应消息路径的前缀 -->
+		<property name="prefix" value="/WEB-INF/page/"></property>
+		
+		<!-- 配置响应消息文件的后缀 -->
+		<property name="suffix" value=".jsp"></property>
+		
+		<!-- 拼接出响应消息的路径：/welcome.jsp -->
+	</bean>
+
+	<!-- 配置文件上传 MultipartResolver -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="500000000" />
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
+</beans>

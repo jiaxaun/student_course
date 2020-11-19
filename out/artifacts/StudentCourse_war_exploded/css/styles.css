@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei UI";
+}
+.header{
+    height: 70px;
+    background-color: #467FE6;
+}
+.header .logo{
+    background: url("../images/logo.jpeg") no-repeat;
+    background-size: 70px 70px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 70px;
+    padding-left: 80px;
+    float: left;
+    width: 400px;
+}
+/*.header .pic{*/
+/*    background: url("../img/logo.jpeg") no-repeat;*/
+/*    !*background-image: url("../img/logo.jpeg");*!*/
+/*    background-size: 70px 70px;*/
+/*    line-height: 70px;*/
+/*    padding-left: 80px;*/
+/*    float: right;*/
+/*}*/
+.header .user{
+    height: 70px;
+    color: #ffffff;
+    line-height: 70px;
+    font-weight: bold;
+    float: right;
+    margin-right: 40px;
+    font-size: 16px;
+    padding: 0px 14px;
+    cursor: pointer;
+}
+
+.header .user .point{
+    float: right;
+    margin-top: 24px;
+    margin-left: 5px;
+}
+.header .user:hover ul{
+    display: block;
+}
+.header .user ul{
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px #cccccc;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    border-radius: 5px;
+}
+.header .user ul li{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dotted #cccccc;
+}
+.header .user ul li a{
+    color: #333333;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    padding: 0px 20px;
+}
+.header .user ul li a:hover{
+    background-color: #f2f7ff;
+}
+body{
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+.left{
+    background-color: white;
+    width: 200px;
+    float: left;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 70px;
+    border-right: 1px solid #e1e1e1;
+}
+.left .title{
+    height: 48px;
+    line-height: 48px;
+    background-color: #e9e9e9;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 15px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+}
+.menux p{
+    height: 40px;
+    line-height: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    /*文字不能选中*/
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.menux p:hover{
+    background-color: #467FE6;
+    color: white;
+    cursor: pointer;
+}
+.menux p:hover i{
+    color: #ffffff;
+}
+.menux p i{
+    color: #467FE6;
+}
+.menux p .point{
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+    color: #999999 !important;
+}
+.menux ul{
+    list-style: none;
+    display: none;
+}
+.menux ul li{
+    line-height: 36px;
+    height: 36px;
+    border-bottom: 1px dotted #cccccc;
+
+    box-sizing: border-box;
+    color: #666666;
+    /*文字不能选中*/
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.menux ul li i{
+    color: #467FE6;
+}
+.menux ul li:hover{
+    background-color: #f2f7ff;
+    color: #467FE6;
+}
+.menux ul li a{
+    display: block;
+    padding-left: 68px;
+    color: #666666;
+    text-decoration: none;
+}
+.menux ul li a:hover{
+    color: #467FE6;
+}
+.main{
+    float: right;
+    position: absolute;
+    left: 210px;
+    right: 0px;
+    bottom: 0px;
+    top: 70px;
+}
+.location{
+    height: 40px;
+    line-height: 40px;
+    border-left: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    background-color: #ffffff;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #666666;
+}
+
+.condition{
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    margin-top: 10px;
+    padding: 10px 5px;
+    color: #666666;
+}
+.condition input{
+    height: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+.condition button{
+    margin-right: 10px;
+    background-color: #467FE6;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 12px;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.condition button:hover{
+    background-color: #0064AD;
+}
+.myBtn{
+    margin-right: 10px;
+    background-color: #467FE6;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 12px;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.myBtn:hover{
+    background-color: #0064AD;
+}
+
+.table_list{
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+.table_list td,th{
+    height: 30px;
+    border: 1px solid #e0e0e0;
+
+}
+.table_list th{
+    background-color: #f0f0f0;
+
+}
+.table_list td{
+    padding: 0px 2px;
+}
+.table_list tr:nth-child(odd){
+    background-color: #ffffff;
+}
+.table_list tr:nth-child(even){
+    background-color: #f8f8f8;
+}
+.table_list tr:hover{
+    background-color: #f2f7ff;
+}
+.table_list .edit{
+    color: #005f9b;
+}
+.table_list .remove{
+    color: crimson;
+}
+.table_list .edit,.table_list .remove{
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.page{
+    width: 100%;
+    height: 35px;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-left: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+.page td{
+    padding-left: 10px;
+}
+.page button{
+    margin-right: 10px;
+    background-color: #467FE6;
+    color: #ffffff;
+    border: 0;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.page button:hover{
+    background-color: #0064AD;
+}
+.page-no{
+    width: 40px;
+    border-radius: 3px;
+    border: 1px solid #e1e1e1;
+
+}
+.add{
+    position: absolute;
+    background-color:#ffffff;
+    border: 1px solid #f0f0f0;
+    bottom: 0px;
+    top: 10px;
+    right: 0px;
+    left: 0px;
+}
+.table_add{
+    margin: 20px auto;
+}
+.table_add td{
+    height: 35px;
+    padding-left: 2px;
+    color: #666666;
+}
+.table_add td input{
+    height: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+.table_add td button{
+    margin-right: 10px;
+    background-color: #467FE6;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 12px;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}

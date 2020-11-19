@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/com/my/dao/AdminDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/my/servlet/LoginServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/my/utils/MD5.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/my/utils/PropertiesUtils.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
